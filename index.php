@@ -25,7 +25,7 @@
                 <div class="modulo verde">
                     <h3>Módulo 01</h3>
                     <ul>
-                        <li><a href="#">Exercício A</a></li>
+                        <li><a href="exercicio.php">Exercício A</a></li>
                         <li><a href="#">Exercício B</a></li>
                         <li><a href="#">Exercício C</a></li>
                     </ul>
@@ -99,7 +99,7 @@
 
     </main>
     <footer class="rodape">
-        COD3R & ALUNOS 2025
+        COD3R & ALUNOS © <?= date('Y'); ?>
     </footer>
 
 </body>
