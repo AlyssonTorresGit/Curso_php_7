@@ -1,5 +1,5 @@
 body.exercicio{
-    grid-template-rows: 120x 60px 1fr 60px;
+    grid-template-rows: 120px 60px 1fr 60px;
     grid-template-areas: 
         "cabecalho" 
         "navegacao"
@@ -8,7 +8,6 @@ body.exercicio{
 }
 .principal{
     height: calc(100vh - 240px);
-    
 }
 
 .navegacao{
@@ -18,9 +17,6 @@ body.exercicio{
     align-items: center;
     background-color: #555;
 }
-
-
-
 .navegacao > a{
     text-decoration: none;
     color: #fff;
@@ -30,3 +26,6 @@ body.exercicio{
     padding: 5px 10px;
     margin-right: 10px;
 }
+
+.navegacao > a.verde { background-color: #4caf50;}
+.navegacao > a.vermelho { background-color: #f44336;}

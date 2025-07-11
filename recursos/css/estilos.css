@@ -7,7 +7,7 @@ body{
     margin: 0px;
     display: grid;
     grid-template-rows: 120px 1fr 60px;
-    grid-template-columns: ;
+    grid-template-columns: 1fr;
     grid-template-areas: 
     "cabecalho"
     "principal"
@@ -40,7 +40,7 @@ body{
 
 .principal{
     grid-area: principal;
-    /* height: calc(100vh - 180px); */
+    height: calc(100vh - 180px);
     background-color: #f0f0f0;
     padding: 20px;
 }

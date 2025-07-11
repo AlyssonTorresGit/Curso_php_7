@@ -17,7 +17,7 @@
 <body class="exercicio">
     <header class="cabecalho">
         <h1>Curso PHP 7</h1>
-        <h2>Visualização de exercicios
+        <h2>Visualização de exercicios</h2>
     </header>
     <nav class="navegacao">
         <a href="#" class="verde">Semformatação</a>
@@ -25,7 +25,9 @@
     </nav>
     <main class="principal">
         <div class="conteudo">
-
+            <?php
+            include('teste/teste.php')
+            ?>
         </div>
     </main>
     <footer class="rodape">
