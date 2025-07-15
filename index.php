@@ -25,6 +25,10 @@
                 <div class="modulo verde">
                     <h3>Módulo 01</h3>
                     <ul>
+                        <li><a href="exercicio.php?dir=basico&file=ola">
+                                Ola PHP!
+                            </a>
+                        </li>
                         <li><a href="exercicio.php?dir=basico&file=html">
                                 integração HTML
                             </a>
@@ -32,6 +36,11 @@
                         <li>
                             <a href="exercicio.php?dir=basico&file=css">
                                 integração CSS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=basico&file=comentarios">
+                                Comentarios PHP
                             </a>
                         </li>
                     </ul>
