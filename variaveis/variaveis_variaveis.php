@@ -1,8 +1,12 @@
-<div class="constantes">Contantes</div>
+<div class="titulo">Variáveis Variáveis</div>
+
 <?php
-define('NOME_DA_CONSTANTE', valor) ou CONST NOME_DA_CONSTANTE;
+$a = 'valorA';
+$$a = 'valorAA';
+echo "$a {$$a} ${$a} $valorA";
 
-$valorvariavel = 2.8;
-
-define('NOVISSIMA_TAXA', $valorvariavel);
-echo '<br>' . NOVISSIMA_TAXA;
+echo '<br>';
+$epa = 'opa';
+$opa = 'vish';
+$vish = 'eita!!!!';
+echo "$epa {$$epa} {$$$epa}";
