@@ -8,12 +8,14 @@ var_dump(!true); // not
 
 echo "<p class='divisao'>Tabela Verdade 'AND' (E)</p><hr>";
 var_dump(true && true);
-var_dump(true && false);
+var_dump(true && false); // ou and
 var_dump(false && true);
 var_dump(false && false);
 
+var_dump(true && true);
+
 var_dump(true and true);
-var_dump(true and false);
+var_dump(true and false); //ou &&
 var_dump(false and true);
 var_dump(false and false);
 
@@ -30,11 +32,11 @@ var_dump(false or false);
 
 echo "<p class='divisao'>Tabela Verdade 'XOR' (OU Exclusivo)</p><hr>";
 var_dump(true xor true);
-var_dump(true xor false);
+var_dump(true xor false); // ou um ou o outro 
 var_dump(false xor true);
 var_dump(false xor false);
 
-var_dump(true != true);
+var_dump(true != true); //diferente
 var_dump(true != false);
 var_dump(false != true);
 var_dump(false != false);
@@ -50,7 +52,7 @@ $atingiuCriterio = $criterioHomem || $criterioMulher;
 $podeSeAposentar = $pagouPrevidencia && $atingiuCriterio;
 echo "Pode se aposentar -> $podeSeAposentar.<br>";
 
-if($idade >= 60 && $sexo === 'F') {
+if ($idade >= 60 && $sexo === 'F') {
     echo "Pode se aposentar -> $sexo";
 } elseif ($idade >= 65 && $sexo === 'M') {
     echo "Pode se aposentar -> $sexo";
