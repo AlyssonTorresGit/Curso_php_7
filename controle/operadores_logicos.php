@@ -55,7 +55,24 @@ echo "Pode se aposentar -> $podeSeAposentar.<br>";
 if ($idade >= 60 && $sexo === 'F') {
     echo "Pode se aposentar -> $sexo";
 } elseif ($idade >= 65 && $sexo === 'M') {
-    echo "Pode se aposentar -> $sexo";
+    echo "Pode se aposentar -> $sexo<br>";
 } else {
-    echo 'Vai ter que trabalhar mais um pouco...';
+    echo 'Vai ter que trabalhar mais um pouco... <br>';
+}
+
+$senhaDigitada = 'admin123';
+$senhaCorreta = 'admin123';
+$nivelAcesso = 'usuario'; //admin
+$tem2FA = true;
+$contaAtiva = false;
+
+if (
+    $senhaDigitada === $senhaCorreta &&
+    (
+        $nivelAcesso === 'admin' || ($nivelAcesso === 'usuario' xor $tem2FA)
+    ) && $contaAtiva === true
+) {
+    echo "Acesso Permitido";
+} else {
+    echo "Acesso negado";
 }

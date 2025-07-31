@@ -54,6 +54,3 @@ var_dump(!!5); // dupla negação !!
 var_dump(!!0);
 var_dump(!!""); //false
 var_dump(!!" "); //true
-
-
-empty()
