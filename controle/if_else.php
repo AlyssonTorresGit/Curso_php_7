@@ -1,14 +1,11 @@
 <div class="titulo">If Else</div>
 
 <?php
-if (true) {
+if(true) {
     echo "Serei impresso?<br>";
 }
 
-
-
-
-if (false) {
+if(false) {
     echo "Verdadeiro - Parte A<br>";
     echo "Verdadeiro - Parte B<br>";
 } else {
@@ -16,25 +13,17 @@ if (false) {
     echo "Falso - Parte B<br>";
 }
 
-if (false) {
-    echo 'passo A<br>';
-} else if (true) {
-    echo 'Passo B<br>';
-}
-
-if (false) {
+if(false) {
     echo "Passo A<br>";
-} else if (false) {
+} else if(false) {
     echo "Passo B<br>";
-}
-//elseif (false) {
-//     echo "Passo C<br>";
-// } elseif (false) {
-//     echo "Passo D<br>";
-// } elseif (false) {
-//     echo "Passo E<br>";
-//}
-else {
+} elseif(false) {
+    echo "Passo C<br>";
+} elseif(false) {
+    echo "Passo D<br>";
+} elseif(false) {
+    echo "Passo E<br>";
+} else {
     echo "Úlitmo Passo<br>";
 }
 

@@ -8,14 +8,12 @@ var_dump(!true); // not
 
 echo "<p class='divisao'>Tabela Verdade 'AND' (E)</p><hr>";
 var_dump(true && true);
-var_dump(true && false); // ou and
+var_dump(true && false);
 var_dump(false && true);
 var_dump(false && false);
 
-var_dump(true && true);
-
 var_dump(true and true);
-var_dump(true and false); //ou &&
+var_dump(true and false);
 var_dump(false and true);
 var_dump(false and false);
 
@@ -32,11 +30,11 @@ var_dump(false or false);
 
 echo "<p class='divisao'>Tabela Verdade 'XOR' (OU Exclusivo)</p><hr>";
 var_dump(true xor true);
-var_dump(true xor false); // ou um ou o outro 
+var_dump(true xor false);
 var_dump(false xor true);
 var_dump(false xor false);
 
-var_dump(true != true); //diferente
+var_dump(true != true);
 var_dump(true != false);
 var_dump(false != true);
 var_dump(false != false);
@@ -52,27 +50,10 @@ $atingiuCriterio = $criterioHomem || $criterioMulher;
 $podeSeAposentar = $pagouPrevidencia && $atingiuCriterio;
 echo "Pode se aposentar -> $podeSeAposentar.<br>";
 
-if ($idade >= 60 && $sexo === 'F') {
+if($idade >= 60 && $sexo === 'F') {
     echo "Pode se aposentar -> $sexo";
 } elseif ($idade >= 65 && $sexo === 'M') {
-    echo "Pode se aposentar -> $sexo<br>";
+    echo "Pode se aposentar -> $sexo";
 } else {
-    echo 'Vai ter que trabalhar mais um pouco... <br>';
-}
-
-$senhaDigitada = 'admin123';
-$senhaCorreta = 'admin123';
-$nivelAcesso = 'usuario'; //admin
-$tem2FA = true;
-$contaAtiva = false;
-
-if (
-    $senhaDigitada === $senhaCorreta &&
-    (
-        $nivelAcesso === 'admin' || ($nivelAcesso === 'usuario' xor $tem2FA)
-    ) && $contaAtiva === true
-) {
-    echo "Acesso Permitido";
-} else {
-    echo "Acesso negado";
+    echo 'Vai ter que trabalhar mais um pouco...';
 }
