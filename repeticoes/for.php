@@ -4,6 +4,7 @@
 for($cont = 1; $cont <= 5; $cont++) {
     echo "$cont <br>";
 }
+//for($cont = 1; $cont <= 5; $cont++)
 
 echo "<hr>";
 
@@ -11,13 +12,20 @@ for(; $cont <= 10; $cont++) {
     echo "$cont <br>";
 }
 
+//for(; $cont <=10; $cont++){
+//   echo "$cont <br>";
+//}
+
 echo "<hr>";
 
 for(; $cont <= 15; ) {
     echo "$cont <br>";
     $cont++;
 }
-
+// for(; $cont = 15;) {
+//     echo"$cont <br>";
+//     $cont++;
+//}
 
 $array = [
     1 => 'Domingo',
@@ -30,12 +38,15 @@ $array = [
 ];
 
 print_r($array);
+//print_r($array);
 
 echo "<hr>";
 
 for($i = 1; $i <= count($array); $i++) {
     echo "{$array[$i]} <br>";
 }
+for
+
 
 $matrix = [
     ['a', 'e', 'i', 'o', 'u'],
