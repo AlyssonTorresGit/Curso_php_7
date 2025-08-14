@@ -26,11 +26,17 @@ $matrix = [
 
 foreach ($matrix as $linha) {
     // echo "$linha <br>";
-    foreach($linha as $letra) {
+    foreach ($linha as $letra) {
         echo "$letra ";
     }
     echo "<br>";
 }
+foreach($matri as $linnha){
+    foreach($linha as $letra){
+        echo
+    }
+}
+
 
 $numeros = [1, 2, 3, 4, 5];
 foreach ($numeros as &$dobrar) {
