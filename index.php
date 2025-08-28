@@ -25,18 +25,18 @@
                             </a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=repeticoes&file=desafio_for">
-                                ??
+                            <a href="exercicio.php?dir=repeticoes&file=args_retorno">
+                                Args e Retorno
                             </a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=repeticoes&file=foreach">
-                                ???
+                            <a href="exercicio.php?dir=repeticoes&file=palindromo">
+                                Palindromo
                             </a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=repeticoes&file=break_continue">
-                                ????
+                            <a href="exercicio.php?dir=repeticoes&file=args_variaveis">
+                                args_variaveis
                             </a>
                         </li>
                         <li>
