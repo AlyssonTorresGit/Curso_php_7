@@ -1,24 +1,34 @@
-<div class="titulo">Função e Escopo</div>
+<div class="titulo">Função & Escopo</div>
+
 <?php
-function imprimeMensagens()
-{
-    echo "ola";
-    echo "Ate a proxima<br>";
+function imprimirMensagens() {
+    echo "Olá! ";
+    echo "Até a próxima!<br>";
 }
 
-imprimeMensagens();
+imprimirMensagens();
+imprimirMensagens();
+imprimirMensagens();
 
-$variavek = 1;
+$variavel = 1;
 
-function trocarValor()
-{
+function trocaValor() {
     $variavel = 2;
-    echo "durate a função: $variavel <br>";
+    echo "Durante a função: $variavel <br>";
 }
 
-echo "antes $variavel <br>";
-trocarValor();
-echo "depois $variavel <br>";
+echo "Antes: $variavel <br>";
+trocaValor();
+echo "Depois: $variavel <br>";
 
+function trocaValorDeVerdade() {
+    global $variavel;
+    $variavel = 3;
+    echo "Durante a função: $variavel <br>";
+}
 
-?>
+echo "Antes: $variavel <br>";
+trocaValorDeVerdade();
+echo "Depois: $variavel <br>";
+
+var_dump(trocaValorDeVerdade());
