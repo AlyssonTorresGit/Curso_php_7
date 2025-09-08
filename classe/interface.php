@@ -1,9 +1,24 @@
 <div class="titulo">Interface</div>
 
 <?php
-interface Animal
+interface IAnimal
 {
     function respirar();
 }
 
-class Cachorro implements Animal{}
+interface ICanino extends IAnimal
+{
+    function latir(): string;
+}
+
+class Cachorro implements IAnimal, ICanino
+{
+    function respirar()
+    {
+        return "Irei usar oxigencio!";
+    }
+    function latir()
+    {
+        return 'Au Au';
+    }
+}
