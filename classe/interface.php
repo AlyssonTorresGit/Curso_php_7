@@ -6,4 +6,4 @@ interface Animal
     function respirar();
 }
 
-class Cachorro implements Animal {}
+class Cachorro implements Animal{}
