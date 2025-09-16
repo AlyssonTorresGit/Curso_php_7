@@ -15,7 +15,7 @@ $dados2["endereço"] = "Rua A";
 $dadosCompletos = $dados1 + $dados2;
 print_r($dadosCompletos);
 
-echo '<br>' . is_array($dadosCompletos); //confere se é uma array,retorna 1
+echo '<br>' . is_array($dadosCompletos);
 echo '<br>' . count($dadosCompletos);
 
 echo '<br>';

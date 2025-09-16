@@ -7,20 +7,6 @@ $dados = array(
     "peso" => 49.8
 );
 
-if (isset($dados[0])) {
-    var_dump($dados[0]);
-} else {
-    echo 'Indice [0] não existe<br>';
-}
-
-if (isset($dados['outra_informacao'])) {
-    var_dump($dados('outra_informacao'));
-} else {
-    echo 'chave "outra_informacao" não existe<br>';
-}
-
-
-
 print_r($dados);
 
 var_dump($dados[0]);
@@ -31,18 +17,18 @@ echo '<br>';
 var_dump($dados["outra_informacao"]);
 
 $lista = array(
-    "a",  // indice 0
+    "a",
     "cinco" => "b",
-    "c", // indice 1
-    8 => "d", // indice 8
-    "e", // indice 9
-    6 => "f", // indice 6
-    "g", // indice 10
-    8 => "h" // indice 8
+    "c",
+    8 => "d",
+    "e",
+    6 => "f",
+    "g",
+    8 => "h"
 );
 
 echo '<br>';
-print_r($lista); //imprime o array estruturado
+print_r($lista);
 
 $lista[] = 'i';
 echo '<br>';

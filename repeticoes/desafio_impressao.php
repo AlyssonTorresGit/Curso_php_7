@@ -17,19 +17,14 @@ $array = [
     "FFF"
 ];
 
-for ($i = 0; $i < count($array); $i++) {
-    if ($i % 2 === 1) continue;
-    echo "{$array[$i]}";
-}
-
-for ($i = 0; $i < count($array); $i++) {
-    if ($i % 2 === 1) continue;
+for($i = 0; $i < count($array); $i++) {
+    if($i % 2 === 1) continue;
     echo "{$array[$i]} ";
 }
 
 echo "<br>";
 
-foreach ($array as $chave => $valor) {
-    if ($chave % 2 !== 0) continue;
+foreach($array as $chave => $valor) {
+    if($chave % 2 !== 0) continue;
     echo "$valor ";
 }
