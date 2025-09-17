@@ -1,8 +1,5 @@
 <?php
 session_start();
-session_star();
-
-
 
 if ($_COOKIE['usuario']) {
     $_SESSION['usuario'] = $_COOKIE['usuario'];
