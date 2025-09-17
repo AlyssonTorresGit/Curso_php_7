@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="recursos/css/estilo.css">
+    <link rel="stylesheet" href="recursos/css/login.css">
     <title>Curso PHP 7</title>
 </head>
 
@@ -24,6 +25,9 @@
             </div>
             <?php endif ?>
             <form action="#" method="post"></form>
+            <input type="text">
+            <input type="text">
+            <button>Enter</button>
         </div>
     </main>
     <footer class="rodape">
